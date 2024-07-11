@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Store the correct password in a variable
+var correctPassword = "SecretPassword123";
+
+// Ask user to enter their password
+var userPassword = prompt("Enter your password:");
+
+// Validate the passwords
+if (!userPassword) { // Check if user has entered password
+    alert("Please enter your password.");
+} else if (userPassword === correctPassword) { // Check if both passwords are the same
+    alert("Correct! The password you entered matches the original password.");
+} else {
+    alert("Incorrect password.");
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Prompt user to enter a character
+var char = prompt("Enter a character:");
+
+// Check if the input is a single character and if it is a vowel
+if (char.length === 1) {
+    // Convert the character to lowercase
+    char = char.toLowerCase();
+
+    // Check if the character is a vowel (a, e, i, o, u)
+    if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+        alert(true);
+    } else {
+        alert(false);
+    }
+} else {
+    alert("Please enter a single character.");
+}
+    </script>
+</body>
+</html>

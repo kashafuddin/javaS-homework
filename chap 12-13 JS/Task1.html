@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Prompt user to enter a character
+var input = prompt("Enter a character (number or string):");
+
+// Convert the input to its ASCII code
+var charCode = input.charCodeAt(0);
+
+// Check if the input is a number
+if (charCode >= 48 && charCode <= 57) {
+    alert(`${input} is a number.`);
+} 
+// Check if the input is an uppercase letter
+else if (charCode >= 65 && charCode <= 90) {
+    alert(`${input} is an uppercase letter.`);
+} 
+// Check if the input is a lowercase letter
+else if (charCode >= 97 && charCode <= 122) {
+    alert(`${input} is a lowercase letter.`);
+} 
+// If the input is not a number, uppercase letter, or lowercase letter
+else {
+    alert("The input is not a number, uppercase letter, or lowercase letter.");
+}
+    </script>
+</body>
+</html>

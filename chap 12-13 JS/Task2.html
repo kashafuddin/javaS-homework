@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Prompt user to enter the first integer
+var num1 = parseInt(prompt("Enter the first integer:"));
+
+// Prompt user to enter the second integer
+var num2 = parseInt(prompt("Enter the second integer:"));
+
+// Check if the two integers are equal
+if (num1 === num2) {
+    alert("The two integers are equal.");
+} 
+// If the two integers are not equal, determine the larger one
+else {
+    if (num1 > num2) {
+        alert(`${num1} is larger than ${num2}.`);
+    } else {
+        alert(`${num2} is larger than ${num1}.`);
+    }
+}
+    </script>
+</body>
+</html>

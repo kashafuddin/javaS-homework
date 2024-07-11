@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Get time input from the user
+let time = prompt("Enter the time in 24-hour clock format (e.g., 1900 for 7pm):");
+
+// Convert the input time to a 12-hour clock format
+if (time >= 0 && time < 1200) {
+    console.log("The time is " + time + " = " + time + "am");
+} else if (time >= 1200 && time < 2400) {
+    let twelveHourTime = time - 1200;
+    if (twelveHourTime === 0) {
+        twelveHourTime = 1200; // 0 should be converted to 12pm
+    }
+    console.log("The time is " + time + " = " + twelveHourTime + "pm");
+} else {
+    console.log("Invalid input. Please enter a time in the range of 0000 to 2359.");
+}
+    </script>
+</body>
+</html>
